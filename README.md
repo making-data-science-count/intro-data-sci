@@ -17,11 +17,14 @@
 - Running another chunk
 - Rendering a document
 
-### Data Visualization
+### Data Visualization and Data Exploration
 
 - Bar chart
 - Scatterplot
   - Adding a line of best fit
+  
+- Viewing data
+- Counting
 
 - Colors
 - Theming
@@ -33,11 +36,15 @@
 - *t*-test
 - chi-square test
 
-### Preparing data
+### Preparing data and other sundry
 
 - selecting
 - filtering
 - creating new variables
+
+- installing packages
+- reading data
+- writing data
 
 - joining
 
