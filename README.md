@@ -1,8 +1,6 @@
 # swu-data-sci
 
-## Plan
-
-### Introduction
+## Introduction
 
 - Introductions (15 seconds each)
 - My background and story
@@ -11,13 +9,13 @@
   - Slides: 
   - RStudio Cloud: 
 
-### Getting up and running
+## Getting up and running
 
 - Running a single chunk
 - Running another chunk
 - Rendering a document
 
-### Data Visualization and Data Exploration
+## Data Visualization and Data Exploration
 
 - Bar chart
 - Scatterplot
@@ -30,13 +28,13 @@
 - Theming
 - Saving plots
 
-### Modeling
+## Modeling
 
 - regression
 - *t*-test
 - chi-square test
 
-### Preparing data and other sundry
+## Preparing data and other sundry
 
 - selecting
 - filtering
@@ -48,12 +46,12 @@
 
 - joining
 
-### Text Analysis (and Beyond)
+## Text Analysis (and Beyond)
 
 - term frequencies
 - sentiment analysis
 
-### Conclusion
+## Conclusion
 
 - next steps (and recommendations)
 - questions
