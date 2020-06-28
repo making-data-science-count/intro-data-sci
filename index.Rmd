@@ -1,0 +1,90 @@
+---
+title: "R U ready 4 R?"
+subtitle: "Introduction to Analyzing Educational Internet Data Using R"
+author: "Bret Staudt Willet, Joshua Rosenberg, & Spencer Greenhalgh"
+date: "March 6, 2020"
+output:
+  xaringan::moon_reader:
+    css: [default, metropolis, metropolis-fonts, custom.css]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+
+library(knitr)
+library(tidyverse)
+library(xaringan)
+```
+
+class: inverse, center, middle
+
+**Access our slide deck here:**  
+https://bretsw.github.io/fsu-workshop/
+
+**Follow us on Twitter:**  
+[@bretsw](https://twitter.com/bretsw)  
+[@jrosenberg6432](https://twitter.com/jrosenberg6432)  
+[@spgreenhalgh](https://twitter.com/spgreenhalgh)
+
+---
+
+# Who I am 
+
+* **Dr. Joshua Rosenberg**
+  * Assistant Professor, STEM Education, University of Tennessee, Knoxville
+  * *Primary area of interest:* data science in education + data science education
+
+```{r, out.width = "300px", echo = FALSE, fig.align = "center"}
+include_graphics("img/koehler-diaspora-circa-2017.jpg")
+```
+
+---
+
+# How We Teach
+
+```{r, out.width = "480px", echo = FALSE, fig.align = "center"}
+include_graphics("img/tech_support_cheat_sheet.png")
+```
+
+---
+
+# Agenda
+
+1. Getting started
+  1. Why learn R?
+  1. Demo Doc Part 1: Processing data
+  1. Demo Doc Part 2: Visualizing data
+  1. Demo Doc Part 3: Modeling data 
+1. Chapter walkthrough: Considerations for using social media data in LD&T research
+  1. Conducting ethical research
+  1. Framing the research
+  1. Organizing the research process
+  1. Collecting data
+  1. Analyzing data
+  1. Disseminating research
+1. Self-guided exploration
+  1. Option A: Text analysis
+  1. Option B: Social network analysis
+1. Learning and doing more with R
+---
+
+class: inverse, center, middle
+
+# Getting started
+
+---
+
+# Why learn R?
+
+* It is capable of carrying out basic and complex statistical analyses
+* It is able to work with data small (*n* = 30!) and large (*n* = 100,000+) efficiently
+* It is a programming language and so is quite flexible
+* There is a great, inclusive community of users and developers (and teachers)
+* It is cross-platform, open-source, and freely-available
+
+---
