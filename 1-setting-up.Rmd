@@ -1,0 +1,245 @@
+---
+title: "Part 1: Introduction and Getting Up and Running"
+subtitle: "Southern Wesleyan University, EdD Residency"
+author: "Joshua M. Rosenberg, Ph.D, Assistant Professor, University of Tennessee, Knoxville"
+date: "June 30, 2020"
+output:
+  xaringan::moon_reader:
+    css: [default, metropolis, metropolis-fonts, custom.css]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+
+library(knitr)
+library(tidyverse)
+library(xaringan)
+library(dataedu)
+
+joro_years <- round(as.numeric(difftime(as.Date(Sys.Date()), Sys.getenv("joro_bday"), unit="weeks"))/52.25, 1)
+```
+
+class: inverse, center, middle
+
+# Introductions
+
+---
+
+# #whoami
+
+.pull-left[
+* Joshua Rosenberg, Ph.D.
+* Contact: 
+  * [@jrosenberg6432](https://twitter.com/jrosenberg6432)
+  * [jmrosenberg@utk.edu](mailto:jmrosenberg@utk.edu)
+  * https://joshuamrosenberg.com
+* Assistant Professor, STEM Education, University of Tennessee, Knoxville
+* Dad (`r joro_years` year old toddler)
+* Primary areas of interest:
+  * Science education
+  * Data science (for) education
+  * Data science in education
+]
+
+```{r, out.width = "400px", echo = FALSE, fig.align = "center"}
+include_graphics("img/jr-joro.jpg")
+```
+
+---
+
+# Getting to know one another (via Jamboard)
+
+## https://bit.ly/swu-jam
+
+---
+
+class: inverse, center, middle
+
+# Information About Today's Session
+
+
+---
+
+# Homebase
+
+*These will appear in every presentation throughout the day today*
+
+**All materials here:**
+https://github.com/jrosen48/swu-data-sci
+
+**RStudio Cloud**
+[link]
+
+**Ask questions on Google Docs:**
+https://docs.google.com/document/d/1zB3IilyuU0khd10DWQNn44peOkVNI-OLyxRW6WFW5Qw/edit
+
+**Ask questions in Zoom chat!**
+
+---
+
+# Objectives
+
+Big goal: Support you to have confidence that you can solve the data analysis and data science-related problems you 
+wish to solve. 
+
+Specific goals:
+
+- Get up and running and know how to navigate R and RStudio
+- Know enough to get started witht he following:
+	- Visualize and explore data
+	- Statistically analyze data
+	- Prepare messy data
+	- Explore some of the more data science-y aspects of R through text analysis
+- Develop confidence going forward in you ability to analyze data as a part of your program
+
+---
+
+# Pedagogical framework
+
+*Constructivist*
+
+You'll be involved in the process of building new capabilities (and knowledge and skills) with support from others and carefully-chosen scaffolds (and tools).
+
+Specifically: 
+
+- Each of the four sessions will be organized around a big idea
+- You will be doing a great deal of the work
+1. You'll be using R Markdown to try things out
+1. There will be some "reach" challenges for you to consider; you'll also have the chance for greater support
+- Then, we will discuss what we did and how it applies
+
+---
+
+# Over-arching design of today's session
+
+The pedagogical framework play out in the following specific ways:
+
+1. You'll have the chance to share your ideas
+1. You'll first see some brief examples to give you a sense of what's possible
+  - You'll be using R Markdown to try things out
+  - There will be some "reach" challenges for you to consider
+  - You'll also have the chance for greater support
+1. You'll have another chance to share your ideas and thoughts about what you've done; it will also give me a chance to hear from you about what you did
+
+---
+
+# Agenda
+
+### *Part 1: Getting up and running*
+### Part 2: Visualizing and exploring data
+### Part 3: Modeling and understanding data
+### Part 4: Doing more with data science
+
+---
+
+class: inverse, center, middle
+
+# Background on R and RStudio
+
+---
+
+# A little motivation theory
+
+## Expectancy-value theory
+
+We choose things that we are *confident* that we can do well and that are *valuable* to us
+
+We do these in a sociocultural *context*: our sense of belonging impacts what we choose to do
+
+## An argument about RMarkdown
+
+- This presentation will make the argument that **you can use R and RStudio to solve
+problems that are important to you**
+
+- In doing so, you can **participate in a cool community of data scientists in education**
+
+--- 
+
+# Why learn R?
+
+* It is capable of carrying out basic and complex statistical analyses
+* It is able to work with data small (*n* = 30) and large (*n* = 100,000+) efficiently
+* It is a programming language and so is quite flexible
+* There is a great, inclusive community of users and developers (and teachers)
+* It is cross-platform, open-source, and freely-available
+
+---
+
+
+class: inverse, center, middle
+
+# Prerequisites
+
+---
+
+# RStudio Cloud
+
+**[This link will take you to the RStudio Cloud project for this workshop](https://rstudio.cloud/project/964811).**
+
+Once you have navigated to this webpage, log in using a Google or GitHub account. Then, create a permanent copy of the project in your own workspace (see the prompt at the top of the page guiding you to do this).
+
+From here, you can write and run R code exactly as your would through RStudio on your computer.
+---
+
+# R and RStudio
+
+**If you like, you may (of course!) use R and RStudio**
+
+If not downloaded:
+
+To download R:
+* [Visit this page to download R](https://cran.r-project.org/)
+* Find your operating system (Mac, Windows, or Linux)
+* Download the 'latest release' on the page for your operating system and download and install the application
+
+To download RStudio:
+* [Visit this page to download RStudio](https://rstudio.com/products/rstudio/download/)
+* Find your operating system (Mac, Windows, or Linux)
+* Download the 'latest release' on the page for your operating system and download and install the application
+
+### Check that it worked
+
+Open RStudio. Find the console window and type in `2 + 2`. If what you can guess is returned (hint: it's what you expect!), then RStudio *and* R both work.
+
+---
+
+class: inverse, center, middle
+
+# Getting started with RStudio
+
+Activities:  
+
+Running a single RMarkdown chunk  
+Running another RMarkdown chunk  
+Rendering an RMarkdown document to a PDF  
+Creating your first visualization
+
+---
+
+# Running a single RMarkdown chunk 
+
+---
+
+# Running another RMarkdown chunk  
+
+
+---
+
+# Rendering an RMarkdown document to a PDF  
+
+
+---
+
+# Creating your first visualization
+
+---
+
+
+class: inverse, center, middle
+
+# *Next*: Data visualization and data exploration

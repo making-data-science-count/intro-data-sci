@@ -1,0 +1,127 @@
+---
+title: "Part 2: Data Visualization and Data Exploration"
+subtitle: "Southern Wesleyan University, EdD Residency"
+author: "Joshua M. Rosenberg, Ph.D, Assistant Professor, University of Tennessee, Knoxville"
+date: "June 30, 2020"
+output:
+  xaringan::moon_reader:
+    css: [default, metropolis, metropolis-fonts, custom.css]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+
+library(knitr)
+library(tidyverse)
+library(xaringan)
+library(dataedu)
+
+joro_years <- round(as.numeric(difftime(as.Date(Sys.Date()), Sys.getenv("joro_bday"), unit="weeks"))/52.25, 1)
+```
+
+class: inverse, center, middle
+
+# Welcome back!
+
+---
+
+# Homebase
+
+*These will appear in every presentation throughout the day today*
+
+**All materials here:**
+https://github.com/jrosen48/swu-data-sci
+
+**RStudio Cloud**
+[link]
+
+**Ask questions on Google Docs:**
+https://docs.google.com/document/d/1zB3IilyuU0khd10DWQNn44peOkVNI-OLyxRW6WFW5Qw/edit
+
+**Ask questions in Zoom chat!**
+
+---
+
+# Agenda
+
+### Part 1: Getting up and running
+### *Part 2: Visualizing and exploring data*
+### Part 3: Modeling and understanding data
+### Part 4: Doing more with data science
+
+---
+
+class: inverse, center, middle
+
+# ggplot2
+
+---
+
+# Bar chart
+
+---
+
+# Scatterplot
+
+
+
+---
+
+# Adding a line of best fit
+
+---
+
+class: inverse, center, middle
+
+# Exploring data
+
+---
+
+# Printing
+
+
+---
+
+# Viewing data
+
+
+---
+
+# Counting
+
+
+---
+class: inverse, center, middle
+
+# Beyond the basics of ggplot2
+
+---
+
+# Colors
+
+---
+
+# Filtering
+
+---
+
+# Selecting
+
+---
+
+# Theming
+
+---
+
+# Saving plots
+
+---
+
+class: inverse, center, middle
+
+# *Next*: Modeling and preparing data
