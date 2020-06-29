@@ -7,3 +7,42 @@ output: pdf_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+Let's first load the {dataedu} package adn the {tidyverse} suite of packages.
+
+```{r}
+library(dataedu)
+library(tidyverse)
+```
+
+If you saw some messages, success!
+
+Here is the data set we will use:
+
+```{r}
+sci_mo_processed
+```
+
+# Demo doc (part 3): Try it out!
+
+Let's run a regression.
+
+```{r}
+m1 <- lm(tvhours ~ age, data = gss_cat)
+summary(m1)
+```
+
+Character strings and factors are automatically dummy-coded by `lm()`:
+
+```{r}
+m2 <- lm(tvhours ~ marital, data = gss_cat)
+summary(m2)
+```
+
+**Try it out!**
+
+Can you add another variable to the model? If you need to check what variables are in `gss_cat`, print that object to the console. What do you notice about the output?
+
+```{r}
+m3 <- lm(tvhours ~ age + , data = gss_cat)
+summary(m3)
+```

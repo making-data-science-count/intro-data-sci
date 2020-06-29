@@ -7,3 +7,99 @@ output: pdf_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+Let's first load the {dataedu} package adn the {tidyverse} suite of packages.
+
+```{r}
+library(dataedu)
+library(tidyverse)
+```
+
+If you saw some messages, success!
+
+Here is the data set we will use:
+
+```{r}
+sci_mo_processed
+```
+
+# Demo doc (part 1): Try it out!
+
+# Select
+
+Let's select only a few variables.
+
+```{r}
+gss_cat %>% 
+  select(year, tvhours)
+
+gss_cat %>% 
+  select(year, marital, tvhours)
+```
+
+**Try it out!**
+
+Now, select three *different* variables, and run the code chunk to view the result.
+
+```{r}
+gss_cat %>% 
+  select()
+```
+
+# Filter
+
+```{r}
+gss_cat %>% 
+  filter(age > 60)
+```
+
+**Try it out!**
+
+Filter to include only those individuals who watch a lot of TV - more than 10 hours per *day*!
+
+Be sure to run the result to see whether it did what you think it should do!
+
+```{r}
+gss_cat %>% 
+  
+```
+
+# Mutate
+
+Let's create a new variable for those 60 years of age or older.
+
+```{r}
+gss_cat %>% 
+  mutate(potential_senior = if_else(age >= 63.5, 1, 0),
+         super_senior = if_else(potential_senior == 1 & tvhours < 2, 1, 0)) %>% 
+  count(potential_senior, super_senior)
+```
+
+Let's save the results back to `gss_cat` and make sure that it worked.
+
+```{r}
+gss_cat <- gss_cat %>% 
+  mutate(potential_senior = ifelse(age >= 63.5, TRUE, FALSE))
+```
+
+Adding another variable for folks who are middle-aged.
+
+```{r}
+gss_cat <- gss_cat %>% 
+  mutate(middle_aged = ifelse(age >= 30 & age <= 40, "yes", "no"))
+```
+
+**Try it out!**
+
+Can you create a new variable based upon either the *year* or *tvhours* variable using `if_else()`? 
+
+```{r}
+gss_cat %>% 
+  mutate()
+```
+
+Then, save the results back to `gss_cat` (check out the code two chunks above for an example!).
+
+```{r}
+gss_cat %>% 
+  mutate()
+```

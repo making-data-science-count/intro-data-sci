@@ -7,3 +7,26 @@ output: pdf_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+Let's first load the {dataedu} package adn the {tidyverse} suite of packages.
+
+We'll also load the {tidytext} package
+
+```{r}
+library(dataedu)
+library(tidyverse)
+libary(tidytext)
+```
+
+If you saw some messages, success!
+
+Here is the data set we will use:
+
+```{r}
+tt_tweets
+```
+
+# Text analysis
+
+```{r}
+
+
