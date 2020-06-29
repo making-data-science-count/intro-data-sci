@@ -30,6 +30,12 @@ class: inverse, center, middle
 
 ---
 
+class: inverse, center, middle
+
+# *Big idea*: Data science methods can assist and enhance your work with data.
+
+---
+
 # Homebase
 
 *These will appear in every presentation throughout the day today*
@@ -99,6 +105,14 @@ class: inverse, center, middle
 
 ---
 
+# Getting help
+
+```{r, out.width = "400px", echo = FALSE, fig.align = "center"}
+include_graphics("img/tech_support_cheat_sheet.png")
+```
+
+---
+
 class: inverse, center, middle
 
 # Next steps 
@@ -126,6 +140,12 @@ https://utk.co1.qualtrics.com/jfe/form/SV_8iWTkEepqIeBEW1
 class: inverse, center, middle
 
 # Thank you and contact!
+
+---
+
+class: inverse, center, middle
+
+# *Big idea*: Data science methods can assist and enhance your work with data.
 
 ---
 

@@ -26,6 +26,12 @@ joro_years <- round(as.numeric(difftime(as.Date(Sys.Date()), Sys.getenv("joro_bd
 
 class: inverse, center, middle
 
+# *Big idea*: Those of us in education-including and especially you-can creatively work with data using R and RStudio.
+
+---
+
+class: inverse, center, middle
+
 # Introductions
 
 ---
@@ -105,24 +111,18 @@ Specific goals:
 
 You'll be involved in the process of building new capabilities (and knowledge and skills) with support from others and carefully-chosen scaffolds (and tools).
 
-Specifically: 
-
 - Each of the four sessions will be organized around a big idea
 - You will be doing a great deal of the work
-1. You'll be using R Markdown to try things out
-1. There will be some "reach" challenges for you to consider; you'll also have the chance for greater support
 - Then, we will discuss what we did and how it applies
 
 ---
 
 # Over-arching design of today's session
 
-The pedagogical framework play out in the following specific ways:
+The pedagogical framework *plays out* in the following specific ways:
 
 1. You'll first see some brief examples to give you a sense of what's possible
 1. You'll be using R Markdown to try things out
-  - There will be some "reach" challenges for you to consider
-  - You'll also have the chance for greater support
 1. You'll have a chance to share your ideas and thoughts about what you've done; it will also give me a chance to hear from you about what you did
 
 ---
@@ -238,6 +238,11 @@ Creating your first visualization
 
 ---
 
+class: inverse, center, middle
+
+# *Big idea*: Those of us in education-including and especially you-can creatively work with data using R and RStudio.
+
+---
 
 class: inverse, center, middle
 

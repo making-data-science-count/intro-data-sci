@@ -30,6 +30,12 @@ class: inverse, center, middle
 
 ---
 
+class: inverse, center, middle
+
+# *Big idea*: Linear regression models are a general-purpose tool for analyzing data.
+
+---
+
 # Homebase
 
 *These will appear in every presentation throughout the day today*
@@ -141,6 +147,12 @@ class: inverse, center, middle
 ---
 
 # Saving plots
+
+---
+
+class: inverse, center, middle
+
+# *Big idea*: Linear regression models are a general-purpose tool for analyzing data.
 
 ---
 
