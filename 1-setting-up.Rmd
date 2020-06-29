@@ -1,5 +1,5 @@
 ---
-title: "Part 1: Introduction and Getting Up and Running"
+title: "Part 1: Introductions and Getting Up and Running"
 subtitle: "Southern Wesleyan University, EdD Residency"
 author: "Joshua M. Rosenberg, Ph.D, Assistant Professor, University of Tennessee, Knoxville"
 date: "June 30, 2020"
@@ -52,7 +52,7 @@ include_graphics("img/jr-joro.jpg")
 
 ---
 
-# Getting to know one another (via Jamboard)
+# Getting to know one another
 
 ## https://bit.ly/swu-jam
 

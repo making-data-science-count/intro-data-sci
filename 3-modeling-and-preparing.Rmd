@@ -1,5 +1,5 @@
 ---
-title: "Part 2: Data Visualization and Data Exploration"
+title: "Part 3: Modeling and Preparing Data"
 subtitle: "Southern Wesleyan University, EdD Residency"
 author: "Joshua M. Rosenberg, Ph.D, Assistant Professor, University of Tennessee, Knoxville"
 date: "June 30, 2020"

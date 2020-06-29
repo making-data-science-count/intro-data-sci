@@ -47,6 +47,14 @@ https://docs.google.com/document/d/1zB3IilyuU0khd10DWQNn44peOkVNI-OLyxRW6WFW5Qw/
 
 ---
 
+class: inverse, center, middle
+
+# But first!
+
+
+
+---
+
 # Agenda
 
 ### Part 1: Getting up and running
@@ -108,6 +116,10 @@ class: inverse, center, middle
 ---
 
 # Post-survey
+
+(takes around five minutes)
+
+https://utk.co1.qualtrics.com/jfe/form/SV_8iWTkEepqIeBEW1
 
 ---
 

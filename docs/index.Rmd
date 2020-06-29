@@ -10,6 +10,20 @@ knitr::opts_chunk$set(echo = TRUE)
 
 library(here)
 ```
+# Homebase
+
+*These will appear in every presentation throughout the day today*
+
+**All materials here:**
+https://github.com/jrosen48/swu-data-sci
+
+**RStudio Cloud**
+[link]
+
+**Ask questions on Google Docs:**
+https://docs.google.com/document/d/1zB3IilyuU0khd10DWQNn44peOkVNI-OLyxRW6WFW5Qw/edit
+
+**Ask questions in Zoom chat!**
 
 # Slides
 
@@ -17,3 +31,9 @@ library(here)
 - [2-data-vis-and-data-exploration.html](2-data-vis-and-data-exploration.html)
 - [3-modeling-and-preparing.html](3-modeling-and-preparing.html)
 - [4-text-analysis-and-beyond.html](4-text-analysis-and-beyond.html)
+
+# Contact
+
+* [@jrosenberg6432](https://twitter.com/jrosenberg6432)
+* [jmrosenberg@utk.edu](mailto:jmrosenberg@utk.edu)
+* https://joshuamrosenberg.com
