@@ -1,13 +1,17 @@
 ---
-title: "index"
-output: html_document
+title: "An Introduction to Data Science in Education Using R"
+subtitle: "Southern Wesleyan University, EdD Residency"
+author: "Joshua M. Rosenberg, Ph.D, Assistant Professor, University of Tennessee, Knoxville"
+date: "June 30, 2020"
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
+
+library(here)
 ```
 
-Slides:
+# Slides
 
 - [1-setting-up.html](1-setting-up.html)
 - [2-data-vis-and-data-exploration.html](2-data-vis-and-data-exploration.html)

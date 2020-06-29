@@ -119,12 +119,11 @@ Specifically:
 
 The pedagogical framework play out in the following specific ways:
 
-1. You'll have the chance to share your ideas
 1. You'll first see some brief examples to give you a sense of what's possible
-  - You'll be using R Markdown to try things out
+1. You'll be using R Markdown to try things out
   - There will be some "reach" challenges for you to consider
   - You'll also have the chance for greater support
-1. You'll have another chance to share your ideas and thoughts about what you've done; it will also give me a chance to hear from you about what you did
+1. You'll have a chance to share your ideas and thoughts about what you've done; it will also give me a chance to hear from you about what you did
 
 ---
 
