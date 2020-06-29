@@ -7,7 +7,7 @@ output: pdf_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Let's first load the {dataedu} package adn the {tidyverse} suite of packages.
+Let's first load the {dataedu} package and the {tidyverse} suite of packages.
 
 ```{r}
 library(dataedu)
@@ -45,4 +45,46 @@ Can you add another variable to the model? If you need to check what variables a
 ```{r}
 m3 <- lm(tvhours ~ age + , data = gss_cat)
 summary(m3)
+```
+
+
+# Mutate
+
+Let's create a new variable for those 60 years of age or older.
+
+```{r}
+gss_cat %>% 
+  mutate(potential_senior = if_else(age >= 63.5, 1, 0),
+         super_senior = if_else(potential_senior == 1 & tvhours < 2, 1, 0)) %>% 
+  count(potential_senior, super_senior)
+```
+
+Let's save the results back to `gss_cat` and make sure that it worked.
+
+```{r}
+gss_cat <- gss_cat %>% 
+  mutate(potential_senior = ifelse(age >= 63.5, TRUE, FALSE))
+```
+
+Adding another variable for folks who are middle-aged.
+
+```{r}
+gss_cat <- gss_cat %>% 
+  mutate(middle_aged = ifelse(age >= 30 & age <= 40, "yes", "no"))
+```
+
+**Try it out!**
+
+Can you create a new variable based upon either the *year* or *tvhours* variable using `if_else()`? 
+
+```{r}
+gss_cat %>% 
+  mutate()
+```
+
+Then, save the results back to `gss_cat` (check out the code two chunks above for an example!).
+
+```{r}
+gss_cat %>% 
+  mutate()
 ```

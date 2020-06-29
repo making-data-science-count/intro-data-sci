@@ -66,8 +66,7 @@ include_graphics("img/jr-joro.jpg")
 
 class: inverse, center, middle
 
-# Information About Today's Session
-
+# Session Information
 
 ---
 
@@ -166,7 +165,10 @@ problems that are important to you**
 
 class: inverse, center, middle
 
-# Prerequisites
+# Where You'll Be Running R
+
+- RStudio Cloud (preferred)
+- R and RStudio on your computer
 
 ---
 
@@ -203,7 +205,7 @@ Open RStudio. Find the console window and type in `2 + 2`. If what you can guess
 
 class: inverse, center, middle
 
-# Getting started with RStudio
+# Try it out! Getting started with RStudio
 
 Activities:  
 
@@ -230,21 +232,29 @@ Let's hop over to the "demo doc"!
 
 Let's run the first chunk by clicking the green arrow in the first code chunk.
 
+If you saw the message "It worked!", congratulations - it worked!
+
 ---
 
 # Running another RMarkdown chunk  
 
-After 
+After running one chunk, we can easily run the next chunk. 
 
+What happens when you print the second chunk (with `sci_mo_processed`)?
+
+---
+
+# Working through the remainder of the document
+
+(We'll work together through a few sections of the document in this phase)
 
 ---
 
 # Rendering an RMarkdown document to a PDF  
 
+Have you made it to the end of the document? 
 
----
-
-# Creating your first visualization
+Now, we'll render to a PDF.
 
 ---
 
