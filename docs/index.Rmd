@@ -16,9 +16,9 @@ library(here)
 - This website: https://jrosen48.github.io/swu-data-sci/
 - RStudio Cloud (with links to the *demo docs*): 
   - Part 1: https://rstudio.cloud/project/1421785
-  - Part 2:
-  - Part 3: 
-  - Part 4: 
+  - Part 2: https://rstudio.cloud/project/1427304
+  - Part 3: (to be added)
+  - Part 4: (to be added)
   
 - Repository with all files for today's workshop: https://github.com/jrosen48/swu-data-sci
 
