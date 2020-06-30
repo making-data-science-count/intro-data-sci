@@ -1,5 +1,6 @@
 ---
 title: "1-setting-up-demo-doc"
+author: ""
 output: pdf_document
 ---
 
@@ -110,7 +111,7 @@ sci_mo_processed %>%
 
 # Rendering this document to a PDF report 
 
-- change the name at the very top of this document
+- add your name as the author at the very top of this document
 - click "Knit" and check out the result!
 
 # Visualizing a larger dataset (leap)

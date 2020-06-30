@@ -24,9 +24,11 @@ class: center, middle, inverse, title-slide
 
 
 
+
 class: inverse, center, middle
 
 # Welcome back!
+
 
 ---
 
@@ -34,7 +36,9 @@ class: inverse, center, middle
 
 # *Big idea*: Visualizing data involves deciding what to represent (in what ways).
 
---- 
+---
+
+
 
 # Homebase
 
@@ -62,19 +66,86 @@ https://docs.google.com/document/d/1zB3IilyuU0khd10DWQNn44peOkVNI-OLyxRW6WFW5Qw/
 
 ---
 
+# ggplot2
+
+- based on the "grammar of graphics"
+- a popular R package (ggplot2)
+- flexible and fun to use
+- requires you to think about what you what to visualize in what ways
+
+---
+
+# Example ggplot2 plot
+
+
+```r
+sci_mo_processed %&gt;% 
+  ggplot(aes(x = percentage_earned, y = TimeSpent)) +
+  geom_point()
+```
+
+![](2-data-viz-and-data-exploration_files/figure-html/unnamed-chunk-1-1.png)&lt;!-- --&gt;
+
+---
+
+# Example ggplot2 plot
+
+
+```r
+sci_mo_processed %&gt;% 
+  ggplot(aes(x = percentage_earned, y = TimeSpent)) +
+  geom_point() +
+  geom_smooth(method = "lm")
+```
+
+![](2-data-viz-and-data-exploration_files/figure-html/unnamed-chunk-2-1.png)&lt;!-- --&gt;
+
+---
+
+# Example ggplot2 plot
+
+
+```r
+sci_mo_processed %&gt;% 
+  ggplot(aes(x = percentage_earned, y = TimeSpent)) +
+  geom_point() +
+  geom_smooth(method = "lm") +
+  theme_bw()
+```
+
+![](2-data-viz-and-data-exploration_files/figure-html/unnamed-chunk-3-1.png)&lt;!-- --&gt;
+
+---
+
+# Example ggplot2 plot
+
+
+```r
+sci_mo_processed %&gt;% 
+  ggplot(aes(x = percentage_earned, y = TimeSpent)) +
+  geom_point() +
+  geom_smooth(method = "lm") +
+  theme_bw() +
+  facet_wrap(~subject)
+```
+
+![](2-data-viz-and-data-exploration_files/figure-html/unnamed-chunk-4-1.png)&lt;!-- --&gt;
+
+---
+
 class: inverse, center, middle
 
 # Try it out! ggplot2 
 
 *Let's hop over to the demo doc for part 2!*
 
-- An introduction to ggplot2
-- Exploring data
-- Beyond the basics
+An introduction to ggplot2  
+Exploring data  
+Beyond the basics  
 
 ---
 
-# *Discuss in groups!*
+# *Discuss in groups! (five minutes in groups, five minutes together)*
 
 - What challenges did you face?
 - What successes did you face?
