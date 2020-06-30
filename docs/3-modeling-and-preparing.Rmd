@@ -1,0 +1,104 @@
+---
+title: "Part 3: Modeling and Preparing Data"
+subtitle: "Southern Wesleyan University, EdD Residency"
+author: "Joshua M. Rosenberg, Ph.D, Assistant Professor, University of Tennessee, Knoxville"
+date: "June 30, 2020"
+output:
+  xaringan::moon_reader:
+    css: [default, metropolis, metropolis-fonts, custom.css]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+
+library(knitr)
+library(tidyverse)
+library(xaringan)
+library(dataedu)
+
+joro_years <- round(as.numeric(difftime(as.Date(Sys.Date()), Sys.getenv("joro_bday"), unit="weeks"))/52.25, 1)
+```
+
+class: inverse, center, middle
+
+# Welcome back!
+
+---
+
+class: inverse, center, middle
+
+# *Big idea*: Linear regression models are a general-purpose tool for analyzing data.
+
+---
+
+# Homebase
+
+*These will appear in every presentation throughout the day today*
+
+**All materials here:**
+https://github.com/jrosen48/swu-data-sci
+
+**RStudio Cloud**
+https://rstudio.cloud/project/1421785
+
+**Ask questions on Google Docs:**
+https://docs.google.com/document/d/1zB3IilyuU0khd10DWQNn44peOkVNI-OLyxRW6WFW5Qw/edit
+
+**Ask questions in Zoom chat!**
+
+---
+
+# Agenda
+
+### Part 1: Getting up and running
+### Part 2: Visualizing and exploring data
+### *Part 3: Modeling and understanding data*
+### Part 4: Doing more with data science
+
+---
+
+class: inverse, center, middle
+
+# Regression
+
+---
+
+# Linear (regression) models
+
+---
+
+class: inverse, center, middle
+
+# Try it out! Linear models
+
+*Let's hop over to the demo doc for part 3!*
+
+- `lm()` (for linear model)
+- preparing data
+- reading and writing data
+- reading your own data (leap)
+
+---
+
+# *Discuss in groups!*
+
+- What challenges did you face?
+- What successes did you face?
+- What questions do you still have?
+
+---
+
+class: inverse, center, middle
+
+# *Big idea*: Linear regression models are a general-purpose tool for analyzing data.
+
+---
+
+class: inverse, center, middle
+
+# *Next*: Text analysis and beyond
