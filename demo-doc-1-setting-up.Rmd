@@ -7,6 +7,8 @@ output: pdf_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+# Loading, setting up 
+
 Let's first load the {dataedu} package adn the {tidyverse} suite of packages.
 
 ```{r}
@@ -24,7 +26,7 @@ Here is the data set we will use:
 sci_mo_processed
 ```
 
-# Select
+# Selecting variables
 
 Let's select only a few variables.
 
@@ -45,7 +47,7 @@ gss_cat %>%
   select()
 ```
 
-# Filter
+# Filtering variables
 
 ```{r}
 gss_cat %>% 
@@ -63,7 +65,7 @@ gss_cat %>%
   filter()
 ```
 
-# Creating a plot
+# Creating a plot (with ggplot2)
 
 ```{r}
 
@@ -77,8 +79,14 @@ gss_cat %>%
 
 ---
 
-Good work! Now:
+# Rendering this document to a PDF report 
 
 - change the name at the very top of this document
 - click "Knit"
 - check out the result!
+
+# Visualizing a larger dataset (leap)
+
+```{r}
+
+```

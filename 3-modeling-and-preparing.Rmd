@@ -44,7 +44,7 @@ class: inverse, center, middle
 https://github.com/jrosen48/swu-data-sci
 
 **RStudio Cloud**
-[link]
+https://rstudio.cloud/project/1421785
 
 **Ask questions on Google Docs:**
 https://docs.google.com/document/d/1zB3IilyuU0khd10DWQNn44peOkVNI-OLyxRW6WFW5Qw/edit
@@ -60,17 +60,6 @@ https://docs.google.com/document/d/1zB3IilyuU0khd10DWQNn44peOkVNI-OLyxRW6WFW5Qw/
 ### *Part 3: Modeling and understanding data*
 ### Part 4: Doing more with data science
 
-- regression
-
-- Mutating
-- Grouping and summarizing
-
-- installing packages
-- reading data
-- writing data
-
-- joining
-
 ---
 
 class: inverse, center, middle
@@ -79,74 +68,28 @@ class: inverse, center, middle
 
 ---
 
-# `lm()`
-
----
-
-# `lm()`
-
-
----
-
-# `lm()`
+# Linear (regression) models
 
 ---
 
 class: inverse, center, middle
 
-# Preparing data
+# Try it out! Linear models
+
+*Let's hop over to the demo doc for part 3!*
+
+- `lm()` (for linear model)
+- preparing data
+- reading and writing data
+- reading your own data (leap)
 
 ---
 
-# Mutate
+# *Discuss in groups!*
 
-
-
----
-
-# If/else
-
-
----
-
-class: inverse, center, middle
-
-# Reading and writing data
-
----
-
-# Reading data
-
----
-
-# Writing data
-
----
-
----
-class: inverse, center, middle
-
-# Beyond the basics of ggplot2
-
----
-
-# Colors
-
----
-
-# Filtering
-
----
-
-# Selecting
-
----
-
-# Theming
-
----
-
-# Saving plots
+- What challenges did you face?
+- What successes did you face?
+- What questions do you still have?
 
 ---
 

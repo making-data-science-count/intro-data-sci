@@ -226,7 +226,7 @@ Activities:
 
 # Running a single RMarkdown chunk 
 
-Let's hop over to the "demo doc"!
+Let's hop over to the "demo doc" for part 1!
 
 [`demo-doc-1-setting-up.Rmd`](demo-doc-1-setting-up.Rmd)
 
@@ -255,6 +255,16 @@ What happens when you print the second chunk (with `sci_mo_processed`)?
 Have you made it to the end of the document? 
 
 Now, we'll render to a PDF.
+
+---
+
+class: inverse, center, middle
+
+# *Discuss in groups!*
+
+- What challenges did you face?
+- What successes did you face?
+- What questions do you still have?
 
 ---
 

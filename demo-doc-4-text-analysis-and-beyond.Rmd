@@ -27,6 +27,38 @@ tt_tweets
 
 # Text analysis
 
+class: inverse, center, middle
+
+# Text analysis with quanteda
+
+---
+
+# Term frequencies
+
+---
+
+# Sentiment analysis
+
+---
+
+# Plots
+
+---
+
+class: inverse, center, middle
+
+# Doing more with data science
+---
+
+# Installing packages
+
+
 ```{r}
 
+```
 
+# Topic models (leap)
+
+```{r}
+
+```

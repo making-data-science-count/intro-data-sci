@@ -7,7 +7,9 @@ output: pdf_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Let's first load the {dataedu} package adn the {tidyverse} suite of packages.
+# Loading, setting up 
+
+Let's first load the {dataedu} package and the {tidyverse} suite of packages.
 
 ```{r}
 library(dataedu)
@@ -21,6 +23,78 @@ Here is the data set we will use:
 ```{r}
 sci_mo_processed
 ```
+
+# An introduction to ggplot2
+
+## Bar chart
+
+```{r}
+
+```
+
+## Scatterplot
+
+```{r}
+
+```
+
+#3 Adding a line of best fit
+
+```{r}
+
+```
+
+# Exploring data
+
+## Printing
+
+```{r}
+
+```
+
+## Viewing data
+
+```{r}
+
+```
+
+## Counting
+
+```{r}
+
+```
+
+# Beyond the basics of ggplot2
+
+## Colors
+
+```{r}
+
+```
+
+# Theming
+
+```{r}
+
+```
+
+# Saving plots
+
+```{r}
+
+```
+
+# Creating a GIF (leap)
+
+```{r}
+
+```
+
+
+
+
+
+
 
 # Demo doc (part 2): Try it out!
 
@@ -81,4 +155,3 @@ ggplot(gss_cat, aes(x = age, y = tvhours)) +
   facet_wrap(~year)
 ```
 
-# End of part 2!

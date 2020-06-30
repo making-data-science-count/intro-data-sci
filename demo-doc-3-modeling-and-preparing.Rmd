@@ -22,6 +22,33 @@ Here is the data set we will use:
 sci_mo_processed
 ```
 
+
+# `lm()`
+
+# Preparing data
+
+## Mutate
+
+## If/else
+
+# Reading and writing data
+
+## Reading data
+
+## Writing data
+
+# Running a multi-level model (leap)
+
+```{r}
+
+```
+
+
+
+
+
+
+
 # Demo doc (part 3): Try it out!
 
 Let's run a regression.
