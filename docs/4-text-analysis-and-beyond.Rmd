@@ -1,5 +1,5 @@
 ---
-title: "Part 2: Data Visualization and Data Exploration"
+title: "Part 4: Doing more with data science"
 subtitle: "Southern Wesleyan University, EdD Residency"
 author: "Joshua M. Rosenberg, Ph.D, Assistant Professor, University of Tennessee, Knoxville"
 date: "June 30, 2020"
@@ -44,7 +44,7 @@ class: inverse, center, middle
 https://github.com/jrosen48/swu-data-sci
 
 **RStudio Cloud**
-https://rstudio.cloud/project/1421785
+https://rstudio.cloud/project/1427304
 
 **Ask questions on Google Docs:**
 https://docs.google.com/document/d/1zB3IilyuU0khd10DWQNn44peOkVNI-OLyxRW6WFW5Qw/edit
@@ -62,45 +62,58 @@ https://docs.google.com/document/d/1zB3IilyuU0khd10DWQNn44peOkVNI-OLyxRW6WFW5Qw/
 
 ---
 
-# Text analysi
+# Text analysis
 
-*Let's hop over to the demo doc for part 3!*
-
-- text analysis
-- 
-- 
-
----
-
-# Recommended packages
+- Text analysis is an example of a data science technique that *may* be useful to you
+- A bit on the epistemology of work with data:
+   - We're accustomed to thinking of data as that which is stored in rows and columns in spreadsheets
+   - But, not all data takes this form
+- What data we collect, how we decide to collect it, and how we analyze it are decisions that we make
+- Think about the kinds of data you want to collect---and why---to answer the questions *you* want to answer
 
 ---
 
-# Resources
+# Text analysis 
 
----
-
-# Getting help
-
-```{r, out.width = "400px", echo = FALSE, fig.align = "center"}
-include_graphics("img/tech_support_cheat_sheet.png")
-```
+*Let's hop over to the demo doc for part 4!* (optional)
 
 ---
 
 class: inverse, center, middle
 
-# Next steps 
+# Helpful resources and finding help
 
 ---
 
-# Applying what you've learned
+# Resources
 
+- http://r4ds.had.co.nz/
+- https://datascienceineducation.com
+  - https://www.routledge.com/Data-Science-in-Education-Using-R/Estrellado-Freer-Mostipak-Rosenberg-Velasquez/p/book/9780367422257
+- https://learningstatisticswithr.com/
+- https://education.rstudio.com/learn/beginner/
+- More here: https://datascienceineducation.com/c18.html
 
+---
 
---
+# Getting help
 
-# Questions and discussion
+- Try to find out what the specific problem is
+  -  Identify what is *not* causing the problem
+- Highly-recommended: RStudio Community - https://community.rstudio.com/
+- Reach out to each other---sharing what is causing an issue can often help to clarify the problem
+- "Unplug and plug it back in" - restart R, close and reopen R
+- Seek out workshops and other learning opportunities
+- Consider using RStudio Cloud 
+- Reach out to your faculty; it is so great that you're learning R
+- Reach out to me!
+- General strategies on learning more: https://datascienceineducation.com/c17.html
+
+---
+
+class: inverse, center, middle
+
+# Conclusion
 
 ---
 
@@ -118,20 +131,18 @@ class: inverse, center, middle
 
 ---
 
-
-# Post-survey
-
-(takes around five minutes)
-
-https://utk.co1.qualtrics.com/jfe/form/SV_8iWTkEepqIeBEW1
-
----
-
 class: inverse, center, middle
 
 # Thank you and contact!
 
-* Contact: 
-  * @jrosenberg6432
-  * jmrosenberg@utk.edu
-  * https://joshuamrosenberg.com
+@jrosenberg6432
+jmrosenberg@utk.edu
+https://joshuamrosenberg.com
+
+---
+
+# Post-survey (by email)
+
+~ 5-minutes or less
+
+https://utk.co1.qualtrics.com/jfe/form/SV_8iWTkEepqIeBEW1

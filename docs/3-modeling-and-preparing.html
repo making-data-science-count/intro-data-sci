@@ -44,7 +44,7 @@ class: inverse, center, middle
 https://github.com/jrosen48/swu-data-sci
 
 **RStudio Cloud**
-https://rstudio.cloud/project/1421785
+https://rstudio.cloud/project/1427304
 
 **Ask questions on Google Docs:**
 https://docs.google.com/document/d/1zB3IilyuU0khd10DWQNn44peOkVNI-OLyxRW6WFW5Qw/edit
@@ -70,6 +70,91 @@ class: inverse, center, middle
 
 # Linear (regression) models
 
+- Think about a linear (regression) model as a way to answer the question: *What is related to some outcome or result I care about?*
+- *Dependent variable*: An outcome or result
+- *Independent variable*: The thing(s) that relate to the outcome or result you crae about
+- Sometimes, a regression with a single dependent variable and a single independent variable is called a single regression, and one with more than one independent variable is called a multiple regression
+
+---
+
+# Single regression example
+
+
+```r
+m1 &lt;- lm(FinalGradeCEMS ~ TimeSpent, data = sci_mo_processed)
+summary(m1)
+```
+
+```
+## 
+## Call:
+## lm(formula = FinalGradeCEMS ~ TimeSpent, data = sci_mo_processed)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -67.136  -7.805   4.723  14.471  30.317 
+## 
+## Coefficients:
+##              Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept) 6.581e+01  1.491e+00   44.13   &lt;2e-16 ***
+## TimeSpent   6.081e-03  6.482e-04    9.38   &lt;2e-16 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 20.71 on 571 degrees of freedom
+##   (30 observations deleted due to missingness)
+## Multiple R-squared:  0.1335,	Adjusted R-squared:  0.132 
+## F-statistic: 87.99 on 1 and 571 DF,  p-value: &lt; 2.2e-16
+```
+
+---
+
+# Multiple regression example
+
+Note: int refers to students' interest
+
+
+```r
+m2 &lt;- lm(FinalGradeCEMS ~ TimeSpent + int, data = sci_mo_processed)
+summary(m2)
+```
+
+```
+## 
+## Call:
+## lm(formula = FinalGradeCEMS ~ TimeSpent + int, data = sci_mo_processed)
+## 
+## Residuals:
+##     Min      1Q  Median      3Q     Max 
+## -66.450  -7.217   4.596  14.404  30.235 
+## 
+## Coefficients:
+##               Estimate Std. Error t value Pr(&gt;|t|)    
+## (Intercept) 69.3434025  6.9810987   9.933   &lt;2e-16 ***
+## TimeSpent    0.0061523  0.0006984   8.809   &lt;2e-16 ***
+## int         -0.9643084  1.5822741  -0.609    0.543    
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 21.01 on 500 degrees of freedom
+##   (100 observations deleted due to missingness)
+## Multiple R-squared:  0.1373,	Adjusted R-squared:  0.1339 
+## F-statistic:  39.8 on 2 and 500 DF,  p-value: &lt; 2.2e-16
+```
+
+---
+
+# Multiple regression example
+
+Dummy-coding is a powerful (but easy in R ) technique; recall
+that subject is a group---a factor
+
+
+```r
+m3 &lt;- lm(FinalGradeCEMS ~ TimeSpent + int + subject, data = sci_mo_processed)
+summary(m3)
+```
+
 ---
 
 class: inverse, center, middle
@@ -79,9 +164,8 @@ class: inverse, center, middle
 *Let's hop over to the demo doc for part 3!*
 
 - `lm()` (for linear model)
-- preparing data
-- reading and writing data
-- reading your own data (leap)
+- reading and (especially) writing data
+- multi-level models (leap)
 
 ---
 

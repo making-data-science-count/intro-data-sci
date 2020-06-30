@@ -7,111 +7,89 @@ output: pdf_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-Let's first load the {dataedu} package and the {tidyverse} suite of packages.
+Let's first load the {tidyverse} suite of packages as well as the {corrr} package.
 
 ```{r}
-library(dataedu)
 library(tidyverse)
 ```
 
 If you saw some messages, success!
 
-Here is the data set we will use:
+# Reading in an Excel file
+
+Here, we will read in a dataset in Excel.
+
+Click in the file ngsschatxlsx and then click Import Dataset.
+
+Copy and paste that code here (below)!
 
 ```{r}
-sci_mo_processed
+
 ```
 
+# Inspecting the data
+
+```{r}
+ngsschat
+```
+
+# Viewing the data (if you haven't already)
+
+```{r}
+View(ngsschat)
+```
+
+# Correlations
+
+```{r}
+ngsschat %>% 
+  select(know_framework, know_ngss, confidence_ngss) %>% 
+  corrr()
+```
 
 # `lm()`
 
-# Preparing data
+```{r}
+m1 <- lm(confidence_ngss ~ age_range, data = ngsschat)
+summary(m1)
+```
 
-## Mutate
+**Try it out!** 
 
-## If/else
+What other variable can you add? Separate variables with a plus sign:
 
-# Reading and writing data
+```{r}
+m2 <- lm(confidence_ngss ~ age_range + , data = ngsschat)
+summary(m2)
+```
 
-## Reading data
+# Creating a new variable
 
-## Writing data
+```{r}
+ngsschat <- ngsschat %>% 
+  mutate(sum_self_reports = (know_framework + know_ngss + confidence_ngss) / 3)
+```
+
+# Writing data
+
+You've read data; now let's consider writing data.
+
+Let's imagine that we created a new dataset and want to save it.
+
+To write data, I recommend write_csv():
+
+```{r}
+write_csv(ngsschat, "ngsschat_new.csv")
+```
 
 # Running a multi-level model (leap)
 
 ```{r}
+library(lme4)
 
+multilevel_m1 <- lm(FinalGradeCEMS ~ TimeSpent + int + subject + (1|course_id), data = sci_mo_processed)
+summary(multilevel_m1)
 ```
 
+What do you notice about the output?
 
-
-
-
-
-
-# Demo doc (part 3): Try it out!
-
-Let's run a regression.
-
-```{r}
-m1 <- lm(tvhours ~ age, data = gss_cat)
-summary(m1)
-```
-
-Character strings and factors are automatically dummy-coded by `lm()`:
-
-```{r}
-m2 <- lm(tvhours ~ marital, data = gss_cat)
-summary(m2)
-```
-
-**Try it out!**
-
-Can you add another variable to the model? If you need to check what variables are in `gss_cat`, print that object to the console. What do you notice about the output?
-
-```{r}
-m3 <- lm(tvhours ~ age + , data = gss_cat)
-summary(m3)
-```
-
-
-# Mutate
-
-Let's create a new variable for those 60 years of age or older.
-
-```{r}
-gss_cat %>% 
-  mutate(potential_senior = if_else(age >= 63.5, 1, 0),
-         super_senior = if_else(potential_senior == 1 & tvhours < 2, 1, 0)) %>% 
-  count(potential_senior, super_senior)
-```
-
-Let's save the results back to `gss_cat` and make sure that it worked.
-
-```{r}
-gss_cat <- gss_cat %>% 
-  mutate(potential_senior = ifelse(age >= 63.5, TRUE, FALSE))
-```
-
-Adding another variable for folks who are middle-aged.
-
-```{r}
-gss_cat <- gss_cat %>% 
-  mutate(middle_aged = ifelse(age >= 30 & age <= 40, "yes", "no"))
-```
-
-**Try it out!**
-
-Can you create a new variable based upon either the *year* or *tvhours* variable using `if_else()`? 
-
-```{r}
-gss_cat %>% 
-  mutate()
-```
-
-Then, save the results back to `gss_cat` (check out the code two chunks above for an example!).
-
-```{r}
-gss_cat %>% 
-  mutate()
-```
