@@ -85,6 +85,18 @@ https://docs.google.com/document/d/1zB3IilyuU0khd10DWQNn44peOkVNI-OLyxRW6WFW5Qw/
 
 ---
 
+# What I learned from your survey responses (thank you!)
+
+- Everyone uses spreadsheet software
+- You're (mostly) confident that you can solve problems with respect to analyzing 
+data, but are less confident with respect to using statistical software
+- Most of you have used data analysis notebooks (RMarkdown?)
+- You have impressive backgrounds and professional experiences
+- For many, programming and using statistics correctly can be intimidating
+- You're a bit more interested in preparing data for analyses than I thought (cool!)
+
+---
+
 # Objectives
 
 By the end of the session, participants will be able to:
@@ -137,9 +149,9 @@ class: inverse, center, middle
 
 ## Expectancy-value theory
 
-We choose things that we are *confident* that we can do well and that are *valuable* to us
+- We choose things that we are *confident* that we can do well and that are *valuable* to us
 
-We do these in a sociocultural *context*: our sense of belonging impacts what we choose to do
+- We do these in a sociocultural *context*: our sense of belonging impacts what we choose to do
 
 ---
 
@@ -188,8 +200,6 @@ From here, you can write and run R code exactly as your would through RStudio on
 
 **If you like, you may (of course!) use R and RStudio**
 
-If not downloaded:
-
 To download R:
 * [Visit this page to download R](https://cran.r-project.org/)
 * Find your operating system (Mac, Windows, or Linux)
@@ -200,10 +210,6 @@ To download RStudio:
 * Find your operating system (Mac, Windows, or Linux)
 * Download the 'latest release' on the page for your operating system and download and install the application
 
-### Check that it worked
-
-Open RStudio. Find the console window and type in `2 + 2`. If what you can guess is returned (hint: it's what you expect!), then RStudio *and* R both work.
-
 ---
 
 class: inverse, center, middle
@@ -212,10 +218,10 @@ class: inverse, center, middle
 
 Activities:  
 
-- Running a single RMarkdown chunk  
-- Running another RMarkdown chunk  
-- Rendering an RMarkdown document to a PDF  
-- Creating your first visualization
+Running a single RMarkdown chunk  
+Running another RMarkdown chunk  
+Rendering an RMarkdown document to a PDF  
+Creating your first visualization
 
 ---
 
@@ -225,6 +231,94 @@ Activities:
 * It is a great file type to use when beginning to use R and to create reproducible analyses
 * It is fun to use because you can generate different types of output (Word, PDF, and even web-based)
 
+---
+
+# Let's look at a bit of code together
+
+What do you think this code will do?
+
+
+```r
+sci_mo_processed %&gt;% 
+  filter(percentage_earned &gt;= .60) %&gt;% 
+  select(student_id, course_id, percentage_earned))
+```
+
+---
+
+# Let's look at a bit of code together
+
+
+```r
+sci_mo_processed %&gt;% 
+  filter(percentage_earned &gt;= .60) %&gt;% 
+  select(student_id, course_id, percentage_earned)
+```
+
+```
+## # A tibble: 563 x 3
+##    student_id course_id     percentage_earned
+##         &lt;dbl&gt; &lt;chr&gt;                     &lt;dbl&gt;
+##  1      43146 FrScA-S216-02             0.677
+##  2      44638 OcnA-S116-01              0.757
+##  3      47448 FrScA-S216-01             0.661
+##  4      47979 OcnA-S216-01              0.677
+##  5      48797 PhysA-S116-01             0.865
+##  6      51943 FrScA-S216-03             0.855
+##  7      52446 PhysA-S116-01             0.824
+##  8      53447 FrScA-S116-01             0.676
+##  9      53475 FrScA-S116-02             0.820
+## 10      53475 FrScA-S216-01             0.808
+## # … with 553 more rows
+```
+
+---
+
+# Let's look at a bit of code together
+
+What do you think this code will do?
+
+
+```r
+sci_mo_processed %&gt;% 
+  filter(percentage_earned &gt;= .60) %&gt;% 
+  arrange(desc(percentage_earned)) %&gt;% 
+  select(student_id, course_id, percentage_earned, TimeSpent)
+```
+
+---
+
+# Let's look at a bit of code together
+
+
+```r
+sci_mo_processed %&gt;% 
+  filter(percentage_earned &gt;= .60) %&gt;% 
+  select(student_id, course_id, percentage_earned, TimeSpent)
+```
+
+```
+## # A tibble: 563 x 4
+##    student_id course_id     percentage_earned TimeSpent
+##         &lt;dbl&gt; &lt;chr&gt;                     &lt;dbl&gt;     &lt;dbl&gt;
+##  1      43146 FrScA-S216-02             0.677   1555.  
+##  2      44638 OcnA-S116-01              0.757   1383.  
+##  3      47448 FrScA-S216-01             0.661    860.  
+##  4      47979 OcnA-S216-01              0.677   1599.  
+##  5      48797 PhysA-S116-01             0.865   1482.  
+##  6      51943 FrScA-S216-03             0.855      3.45
+##  7      52446 PhysA-S116-01             0.824   1390.  
+##  8      53447 FrScA-S116-01             0.676   1479.  
+##  9      53475 FrScA-S116-02             0.820     NA   
+## 10      53475 FrScA-S216-01             0.808   1867.  
+## # … with 553 more rows
+```
+
+---
+
+# RMarkdown
+
+&lt;img src="/Users/jrosenb8/swu-data-sci/img/rmarkdown.png" width="400px" style="display: block; margin: auto;" /&gt;
 ---
 
 # Running a single RMarkdown chunk 

@@ -88,6 +88,18 @@ https://docs.google.com/document/d/1zB3IilyuU0khd10DWQNn44peOkVNI-OLyxRW6WFW5Qw/
 
 ---
 
+# What I learned from your survey responses (thank you!)
+
+- Everyone uses spreadsheet software
+- You're (mostly) confident that you can solve problems with respect to analyzing 
+data, but are less confident with respect to using statistical software
+- Most of you have used data analysis notebooks (RMarkdown?)
+- You have impressive backgrounds and professional experiences
+- For many, programming and using statistics correctly can be intimidating
+- You're a bit more interested in preparing data for analyses than I thought (cool!)
+
+---
+
 # Objectives
 
 By the end of the session, participants will be able to:
@@ -140,9 +152,9 @@ class: inverse, center, middle
 
 ## Expectancy-value theory
 
-We choose things that we are *confident* that we can do well and that are *valuable* to us
+- We choose things that we are *confident* that we can do well and that are *valuable* to us
 
-We do these in a sociocultural *context*: our sense of belonging impacts what we choose to do
+- We do these in a sociocultural *context*: our sense of belonging impacts what we choose to do
 
 ---
 
@@ -191,8 +203,6 @@ From here, you can write and run R code exactly as your would through RStudio on
 
 **If you like, you may (of course!) use R and RStudio**
 
-If not downloaded:
-
 To download R:
 * [Visit this page to download R](https://cran.r-project.org/)
 * Find your operating system (Mac, Windows, or Linux)
@@ -203,10 +213,6 @@ To download RStudio:
 * Find your operating system (Mac, Windows, or Linux)
 * Download the 'latest release' on the page for your operating system and download and install the application
 
-### Check that it worked
-
-Open RStudio. Find the console window and type in `2 + 2`. If what you can guess is returned (hint: it's what you expect!), then RStudio *and* R both work.
-
 ---
 
 class: inverse, center, middle
@@ -215,10 +221,10 @@ class: inverse, center, middle
 
 Activities:  
 
-- Running a single RMarkdown chunk  
-- Running another RMarkdown chunk  
-- Rendering an RMarkdown document to a PDF  
-- Creating your first visualization
+Running a single RMarkdown chunk  
+Running another RMarkdown chunk  
+Rendering an RMarkdown document to a PDF  
+Creating your first visualization
 
 ---
 
@@ -227,6 +233,51 @@ Activities:
 * RMarkdown is a data analysis "notebook" that combines text with code and output
 * It is a great file type to use when beginning to use R and to create reproducible analyses
 * It is fun to use because you can generate different types of output (Word, PDF, and even web-based)
+
+---
+
+# Let's look at a bit of code together
+
+What do you think this code will do?
+
+```{r, eval = FALSE}
+sci_mo_processed %>% 
+  filter(percentage_earned >= .60) %>% 
+  select(student_id, course_id, percentage_earned))
+```
+
+---
+
+# Let's look at a bit of code together
+
+```{r}
+sci_mo_processed %>% 
+  filter(percentage_earned >= .60) %>% 
+  select(student_id, course_id, percentage_earned)
+```
+
+---
+
+# Let's look at a bit of code together
+
+What do you think this code will do?
+
+```{r, eval = FALSE}
+sci_mo_processed %>% 
+  filter(percentage_earned >= .60) %>% 
+  arrange(desc(percentage_earned)) %>% 
+  select(student_id, course_id, percentage_earned, TimeSpent)
+```
+
+---
+
+# Let's look at a bit of code together
+
+```{r}
+sci_mo_processed %>% 
+  filter(percentage_earned >= .60) %>% 
+  select(student_id, course_id, percentage_earned, TimeSpent)
+```
 
 ---
 

@@ -9,18 +9,24 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Loading, setting up 
 
-Let's first load the {dataedu} package adn the {tidyverse} suite of packages.
+Let's first load the {dataedu} package and the {tidyverse} suite of packages.
+
+Click the green arrow to the first right of what is a "code chunk" below:
 
 ```{r}
 library(dataedu)
 library(tidyverse)
 
-print("It worked!")
+sci_mo_processed %>% 
+  ggplot(aes(x = percentage_earned)) +
+  geom_density()
 ```
 
-If you saw some messages, success!
+If you saw a plot, congratulations! Things are working just fine.
 
-Here is the data set we will use:
+What do you notice about this plot? What do you wonder?
+
+Here is the data set we will use; click the green arrow again:
 
 ```{r}
 sci_mo_processed
@@ -31,50 +37,73 @@ sci_mo_processed
 Let's select only a few variables.
 
 ```{r}
-gss_cat %>% 
-  select(year, tvhours)
-
-gss_cat %>% 
-  select(year, marital, tvhours)
+sci_mo_processed %>% 
+  select(student_id, course_id, percentage_earned)
 ```
 
 **Try it out!**
 
-Now, select three *different* variables, and run the code chunk to view the result.
+Let's try to *include one additional variable* in your select function, 
+
+First, type the name of the data to view a summary of your data (including what variables are included in it):
 
 ```{r}
-gss_cat %>% 
-  select()
+sci_mo_processed
+```
+
+Then, add a new variable to the code below after percentage_earned, being careful to type the new variable name as it appears in the data. When you're ready, click the green arrow to view the result.
+
+```{r}
+sci_mo_processed %>% 
+  select(student_id, course_id, percentage_earned)
 ```
 
 # Filtering variables
 
+Next, let's explore filtering variables
+
 ```{r}
-gss_cat %>% 
-  filter(age > 60)
+sci_mo_processed %>% 
+  filter(percentage_earned >= .60)
 ```
+
+What do you think will happen if we add another condition to the filter statement?
 
 **Try it out!**
 
-Filter to include only those individuals who watch a lot of TV - more than 10 hours per *day*!
+Let's try to filter on TimeSpent, which is a variable for how many minutes students were on the course Learning Management System (LMS).
 
 Be sure to run the result to see whether it did what you think it should do!
 
 ```{r}
-gss_cat %>% 
-  filter()
+sci_mo_processed %>% 
+  filter(percentage_earned >= .60,
+         TimeSpent > )
 ```
 
 # Creating a plot (with ggplot2)
 
-```{r}
+What do you think this code will do?
 
+```{r}
+sci_mo_processed %>% 
+  ggplot(aes(x = TimeSpent)) +
+  geom_histogram()
 ```
 
 **Try it out!**
 
-```{r}
+Now, add TimeSpent to the code below as the variable that will correspond to the *y*-axis. 
 
+Notice that instead of using geom_density, we're using geom_point. What do you think
+this will create?
+
+Be sure to run the code chunk to see the result.
+
+```{r}
+sci_mo_processed %>% 
+  ggplot(aes(x = percentage_earned, y = )) +
+  geom_point()
 ```
 
 ---
@@ -82,11 +111,16 @@ gss_cat %>%
 # Rendering this document to a PDF report 
 
 - change the name at the very top of this document
-- click "Knit"
-- check out the result!
+- click "Knit" and check out the result!
 
 # Visualizing a larger dataset (leap)
 
-```{r}
+Can you filter or select variables from the dataset below?
 
+Can you select a smaller number of variables from the dataset below?
+
+If you add to this code, change the chunk option eval = FALSE to eval = TRUE!
+
+```{r, eval = FALSE}
+tt_tweets
 ```
