@@ -13,10 +13,3 @@
 - Contact:
   * [jmrosenberg@utk.edu](mailto:jmrosenberg@utk.edu)
   * [Twitter: jrosenberg6432](https://twitter.com/jrosenberg6432)
-
-# Slides
-
-- [1 - Setting upl](1-setting-up.html)
-- [2 - Data visualization and exploration](2-data-vis-and-data-exploration.html)
-- [3 - Modeling and preparing data](3-modeling-and-preparing.html)
-- [4 - Text analysis and beyond](4-text-analysis-and-beyond.html)
