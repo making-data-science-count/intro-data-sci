@@ -34,6 +34,6 @@ library(here)
 # Slides
 
 - [1 - Setting up](1-setting-up.html)
-- [2 - Data visualization and exploration](2-data-vis-and-data-exploration.html)
+- [2 - Data visualization and exploration](2-data-viz-and-data-exploration.html)
 - [3 - Modeling and preparing data](3-modeling-and-preparing.html)
 - [4 - Text analysis and beyond](4-text-analysis-and-beyond.html)
