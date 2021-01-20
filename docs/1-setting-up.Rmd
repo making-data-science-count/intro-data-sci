@@ -1,8 +1,8 @@
 ---
 title: "Part 1: Introductions and Getting Up and Running"
-subtitle: "Southern Wesleyan University, EdD Residency"
-author: "Joshua M. Rosenberg, Ph.D, Assistant Professor, University of Tennessee, Knoxville"
-date: "June 30, 2020"
+subtitle: ""
+author: "Joshua M. Rosenberg, Alex Lishinski"
+date: "January 21, 2022"
 output:
   xaringan::moon_reader:
     css: [default, metropolis, metropolis-fonts, custom.css]
@@ -21,7 +21,7 @@ library(tidyverse)
 library(xaringan)
 library(dataedu)
 
-joro_years <- round(as.numeric(difftime(as.Date(Sys.Date()), Sys.getenv("joro_bday"), unit="weeks"))/52.25, 1)
+#joro_years <- round(as.numeric(difftime(as.Date(Sys.Date()), Sys.getenv("joro_bday"), unit="weeks"))/52.25, 1)
 ```
 
 class: inverse, center, middle
@@ -45,7 +45,7 @@ class: inverse, center, middle
   * [jmrosenberg@utk.edu](mailto:jmrosenberg@utk.edu)
   * https://joshuamrosenberg.com
 * Assistant Professor, STEM Education, University of Tennessee, Knoxville
-* Dad (`r joro_years` year old toddler)
+* Dad (2 year old toddler)
 * Primary areas of interest:
   * Science education
   * Data science (for) education
@@ -54,7 +54,7 @@ class: inverse, center, middle
 * Presently PI or Co-PI for three NSF grants
 ]
 
-```{r, out.width = "400px", echo = FALSE, fig.align = "center"}
+```{r, out.width = "400px", echo = FALSE, fig.align = "center", message = FALSE}
 library(here)
 include_graphics(here("img", "jr-joro.jpg"))
 ```

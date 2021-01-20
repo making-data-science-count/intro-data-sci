@@ -21,7 +21,7 @@ library(tidyverse)
 library(xaringan)
 library(dataedu)
 
-joro_years <- round(as.numeric(difftime(as.Date(Sys.Date()), Sys.getenv("joro_bday"), unit="weeks"))/52.25, 1)
+#joro_years <- round(as.numeric(difftime(as.Date(Sys.Date()), Sys.getenv("joro_bday"), unit="weeks"))/52.25, 1)
 ```
 
 class: inverse, center, middle
